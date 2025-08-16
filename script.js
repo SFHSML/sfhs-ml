@@ -42,7 +42,7 @@ function meetingCard(date) {
 
   const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
   const dateStr = date.toLocaleDateString(undefined, options);
-
+  
   const startTime = MEETING_TIME.start.replace(":", ":") + " PM";
   const endTime = MEETING_TIME.end.replace(":", ":") + " PM";
 
