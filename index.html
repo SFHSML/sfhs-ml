@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SFHS Machine Learning Club</title>
-  <meta name="description" content="SFHS Machine Learning Club — learn ML, build projects, compete, and have fun. Monthly meetings on Thursdays." />
+  <meta name="description" content="SFHS Machine Learning Club — learn ML, build projects, compete, and have fun. Monthly meetings on Thursdays at 4:30 PM. Most meetings online; first meeting in Room 1429." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -13,15 +13,14 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Header / Nav -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="SFHS Machine Learning Club home">
         <span class="brand-mark">∑</span> SFHS ML Club
       </a>
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">
-          ☰
-        </button>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#meetings">Meetings</a></li>
@@ -35,6 +34,7 @@
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-inner">
         <h1>SFHS Machine Learning Club</h1>
@@ -52,6 +52,7 @@
       <div class="gradient-bg" aria-hidden="true"></div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
       <div class="container two-col">
         <div>
@@ -71,22 +72,35 @@
         <aside class="card">
           <h3>Meeting cadence</h3>
           <p>
-            We meet <strong>monthly on Thursdays at 4:30 PM</strong> in Room 1429.  
-            Most meetings will be online via Google Meet: <a href="https://meet.google.com/atk-cecp-cma">join here</a>.
+            We meet <strong>monthly on Thursdays at 4:30 PM</strong>. Most meetings are online via
+            <a href="https://meet.google.com/atk-cecp-cma" target="_blank" rel="noopener">Google Meet</a>
+            (code: <code>atk-cecp-cma</code>). Our first meeting will be in <strong>Room 1429</strong> — date TBA.
           </p>
+          <p class="small">Club Sponsor: <strong>Mrs. Pearce</strong></p>
           <p class="muted small">Tip: Add meetings to your calendar from the Meetings section.</p>
         </aside>
       </div>
     </section>
 
+    <!-- Meetings -->
     <section id="meetings" class="section alt">
       <div class="container">
         <h2>Meetings</h2>
+        <div class="card" style="border-left:3px solid #21d4fd; margin-bottom:1rem;">
+          <strong>Note:</strong> Most meetings are online (Meet code <code>atk-cecp-cma</code>).
+          The first meeting will be held in <strong>Room 1429</strong> (date TBA).
+        </div>
         <p class="muted">First Thursday of each month by default. Upcoming six dates auto-generated below.</p>
         <div id="meeting-list" class="cards" role="list" aria-live="polite"></div>
+        <details class="tiny">
+          <summary>Edit schedule rule</summary>
+          <p>Open <code>script.js</code> and change <code>MEETING_RULE</code> to pick
+            <em>first/second/third/fourth/last</em> Thursday.</p>
+        </details>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
@@ -110,40 +124,40 @@
       </div>
     </section>
 
-  <!-- Officers -->
-<section id="officers" class="section alt">
-  <div class="container">
-    <h2>Officers</h2>
-    <div class="people">
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Sudhith%20Mannuru" alt="Headshot placeholder for President Sudhith Mannuru" />
-        <figcaption><strong>President</strong><br><span class="muted">Sudhith Mannuru</span></figcaption>
-      </figure>
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Mandeep%20Pathak" alt="Headshot placeholder for Co-President Mandeep Pathak" />
-        <figcaption><strong>Co-President</strong><br><span class="muted">Mandeep Pathak</span></figcaption>
-      </figure>
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Renesh%20Mylapuram" alt="Headshot placeholder for Executive VP Renesh Mylapuram" />
-        <figcaption><strong>Executive VP</strong><br><span class="muted">Renesh Mylapuram</span></figcaption>
-      </figure>
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Sai%20Devini" alt="Headshot placeholder for VP of Operations Sai Devini" />
-        <figcaption><strong>VP of Operations</strong><br><span class="muted">Sai Devini</span></figcaption>
-      </figure>
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Rehaan%20Grover" alt="Headshot placeholder for VP of Membership Rehaan Grover" />
-        <figcaption><strong>VP of Membership</strong><br><span class="muted">Rehaan Grover</span></figcaption>
-      </figure>
-      <figure class="person">
-        <img src="https://placehold.co/240x240?text=Mrs.%20Pearce" alt="Headshot placeholder for Club Sponsor Mrs. Pearce" />
-        <figcaption><strong>Club Sponsor</strong><br><span class="muted">Mrs. Pearce</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+    <!-- Officers -->
+    <section id="officers" class="section alt">
+      <div class="container">
+        <h2>Officers</h2>
+        <div class="people">
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Sudhith%20Mannuru" alt="Headshot placeholder for President Sudhith Mannuru" />
+            <figcaption><strong>President</strong><br><span class="muted">Sudhith Mannuru</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Mandeep%20Pathak" alt="Headshot placeholder for Co-President Mandeep Pathak" />
+            <figcaption><strong>Co-President</strong><br><span class="muted">Mandeep Pathak</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Renesh%20Mylapuram" alt="Headshot placeholder for Executive VP Renesh Mylapuram" />
+            <figcaption><strong>Executive VP</strong><br><span class="muted">Renesh Mylapuram</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Sai%20Devineni" alt="Headshot placeholder for VP of Operations Sai Devineni" />
+            <figcaption><strong>VP of Operations</strong><br><span class="muted">Sai Devineni</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Rehaan%20Grover" alt="Headshot placeholder for VP of Membership Rehaan Grover" />
+            <figcaption><strong>VP of Membership</strong><br><span class="muted">Rehaan Grover</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240?text=Mrs.%20Pearce" alt="Headshot placeholder for Club Sponsor Mrs. Pearce" />
+            <figcaption><strong>Club Sponsor</strong><br><span class="muted">Mrs. Pearce</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- FAQ -->
     <section id="faq" class="section">
       <div class="container">
         <h2>FAQ</h2>
@@ -162,29 +176,20 @@
       </div>
     </section>
 
+    <!-- Join (Google Form) -->
     <section id="join" class="section">
       <div class="container two-col">
         <div>
           <h2>Join the Club</h2>
-          <p>Get updates about meetings, workshops, and competitions. We’ll email 1–2 times per month.</p>
-          <form id="join-form" class="form" novalidate>
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-
-            <label for="grad">Graduation year</label>
-            <input id="grad" name="grad" type="number" min="2025" max="2035" inputmode="numeric" />
-
-            <button class="button primary" type="submit">Subscribe</button>
-            <p id="form-status" class="small muted" role="status" aria-live="polite"></p>
-          </form>
+          <p>Sign up to get updates about meetings, workshops, and competitions.</p>
+          <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdN4Vd8Fkua2IjVJu-47I0IlmR_-ShikjmstgobjaLuOkILIA/viewform?usp=header" target="_blank" rel="noopener">
+            Fill Out the Google Form
+          </a>
         </div>
         <aside class="card">
           <h3>Questions?</h3>
           <p>Email <a href="mailto:sfhsmachinelearning@gmail.com">sfhsmachinelearning@gmail.com</a></p>
-          <p class="small muted">Or DM us on Instagram: <a href="https://instagram.com/ml_sfhs" target="_blank">@ml_sfhs</a></p>
+          <p class="small muted">Instagram: <a href="https://instagram.com/ml_sfhs" target="_blank" rel="noopener">@ml_sfhs</a></p>
         </aside>
       </div>
     </section>
@@ -197,6 +202,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- cache-bust with ?v=2 so browsers pull the new JS -->
+  <script src="script.js?v=2"></script>
 </body>
 </html>
