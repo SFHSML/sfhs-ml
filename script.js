@@ -2,7 +2,7 @@
 const MEETING_RULE = { which: 'first', weekday: 4 }; // Thursday (0=Sun..6=Sat)
 const MEETINGS_TO_SHOW = 6;
 const MEETING_TIME_LABEL = '4:30 PM – 5:30 PM';
-const MEETING_LOCATION = 'Room 1428';
+const MEETING_LOCATION = "Room 1429";
 const MEET_LINK = 'https://meet.google.com/atk-cecp-cma';
 
 // ---- Helpers ----
