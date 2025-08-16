@@ -1,4 +1,3 @@
-/* Basic reset & theme */
 * { box-sizing: border-box; }
 :root {
   --bg: #0b0f14;
@@ -93,8 +92,7 @@ details[open] { border: 1px solid rgba(255,255,255,.08); }
 .footer-inner { display:flex; justify-content:space-between; padding: 1rem 0; }
 @media (max-width: 700px) { .footer-inner { flex-direction:column; gap:.4rem; } }
 
-
-/* --- Officers grid + image sizing --- */
+/* --- Officers grid + uniform circular images --- */
 #officers .people {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -102,22 +100,17 @@ details[open] { border: 1px solid rgba(255,255,255,.08); }
   align-items: start;
 }
 
-/* Matches the markup we used earlier (<figure class="person">) */
 #officers .person img {
   width: 220px;
   height: 220px;
-  object-fit: cover;      /* crops to a perfect square */
-  border-radius: 12px;    /* change to 50% for circles */
+  object-fit: cover;
+  border-radius: 50%;   /* makes them circles */
   display: block;
   margin-inline: auto;
 }
 
-/* Fallback in case you used a different wrapper (e.g., .officer) */
-#officers img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin-inline: auto;
+#officers .person figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
 }
+
