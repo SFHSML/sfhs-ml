@@ -92,3 +92,12 @@ details[open] { border: 1px solid rgba(255,255,255,.08); }
 .site-footer { border-top: 1px solid rgba(255,255,255,.06); }
 .footer-inner { display:flex; justify-content:space-between; padding: 1rem 0; }
 @media (max-width: 700px) { .footer-inner { flex-direction:column; gap:.4rem; } }
+
+
+.officer img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px; /* change to 50% if you want circles */
+}
+
