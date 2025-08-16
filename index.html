@@ -4,24 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SFHS Machine Learning Club</title>
-  <meta name="description" content="SFHS Machine Learning Club — learn ML, build projects, compete, and have fun. Monthly meetings on Thursdays." />
+  <meta name="description" content="SFHS Machine Learning Club — learn ML, build projects, compete, and have fun. Monthly meetings on Thursdays at 4:30 PM in Room 1428 (most meetings also online).">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="SFHS Machine Learning Club home">
         <span class="brand-mark">∑</span> SFHS ML Club
       </a>
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">
-          ☰
-        </button>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">☰</button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#meetings">Meetings</a></li>
@@ -35,6 +34,7 @@
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-inner">
         <h1>SFHS Machine Learning Club</h1>
@@ -52,6 +52,7 @@
       <div class="gradient-bg" aria-hidden="true"></div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
       <div class="container two-col">
         <div>
@@ -71,22 +72,26 @@
         <aside class="card">
           <h3>Meeting cadence</h3>
           <p>
-            We meet <strong>monthly on Thursdays</strong> at <b>Room 1428</b>, starting at 4:30 PM.  
-            Most meetings will also be online via <a href="https://meet.google.com/atk-cecp-cma" target="_blank">Google Meet</a>.
+            We meet <strong>monthly on Thursdays</strong> at <strong>4:30 PM</strong> in <strong>Room 1428</strong>.
+            Most meetings are also online via
+            <a href="https://meet.google.com/atk-cecp-cma" target="_blank" rel="noopener">Google Meet</a>
+            (code: <code>atk-cecp-cma</code>).
           </p>
           <p class="muted small">Tip: Add meetings to your calendar from the Meetings section.</p>
         </aside>
       </div>
     </section>
 
+    <!-- Meetings -->
     <section id="meetings" class="section alt">
       <div class="container">
         <h2>Meetings</h2>
-        <p class="muted">First Thursday of each month by default. Upcoming six dates auto-generated below.</p>
+        <p class="muted">First Thursday of each month by default. Upcoming six dates are auto-generated below.</p>
         <div id="meeting-list" class="cards" role="list" aria-live="polite"></div>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
@@ -110,6 +115,7 @@
       </div>
     </section>
 
+    <!-- Officers -->
     <section id="officers" class="section alt">
       <div class="container">
         <h2>Officers</h2>
@@ -138,15 +144,11 @@
             <img src="Nikash.jpg" alt="VP of Tech Nikash Nemmara" />
             <figcaption><strong>VP of Tech</strong><br><span class="muted">Nikash Nemmara</span></figcaption>
           </figure>
-          <figure class="person">
-            <figcaption><strong>Club Sponsor</strong><br>
-              <span class="muted">Mrs. Pearce (Room 1428)</span>
-            </figcaption>
-          </figure>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq" class="section">
       <div class="container">
         <h2>FAQ</h2>
@@ -165,17 +167,22 @@
       </div>
     </section>
 
+    <!-- Join -->
     <section id="join" class="section">
       <div class="container two-col">
         <div>
           <h2>Join the Club</h2>
-          <p>Get updates about meetings, workshops, and competitions. We’ll email 1–2 times per month.</p>
-          <p><a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdN4Vd8Fkua2IjVJu-47I0IlmR_-ShikjmstgobjaLuOkILIA/viewform?usp=header" target="_blank">Join via Google Form</a></p>
+          <p>Sign up to get updates about meetings, workshops, and competitions.</p>
+          <p>
+            <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdN4Vd8Fkua2IjVJu-47I0IlmR_-ShikjmstgobjaLuOkILIA/viewform?usp=header" target="_blank" rel="noopener">
+              Join via Google Form
+            </a>
+          </p>
         </div>
         <aside class="card">
           <h3>Questions?</h3>
           <p>Email <a href="mailto:sfhsmachinelearning@gmail.com">sfhsmachinelearning@gmail.com</a></p>
-          <p class="small muted">Or DM us on Instagram: <a href="https://instagram.com/ml_sfhs" target="_blank">@ml_sfhs</a></p>
+          <p class="small muted">Instagram: <a href="https://instagram.com/ml_sfhs" target="_blank" rel="noopener">@ml_sfhs</a></p>
         </aside>
       </div>
     </section>
@@ -188,6 +195,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
