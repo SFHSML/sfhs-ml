@@ -94,10 +94,30 @@ details[open] { border: 1px solid rgba(255,255,255,.08); }
 @media (max-width: 700px) { .footer-inner { flex-direction:column; gap:.4rem; } }
 
 
-.officer img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px; /* change to 50% if you want circles */
+/* --- Officers grid + image sizing --- */
+#officers .people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
 }
 
+/* Matches the markup we used earlier (<figure class="person">) */
+#officers .person img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;      /* crops to a perfect square */
+  border-radius: 12px;    /* change to 50% for circles */
+  display: block;
+  margin-inline: auto;
+}
+
+/* Fallback in case you used a different wrapper (e.g., .officer) */
+#officers img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-inline: auto;
+}
