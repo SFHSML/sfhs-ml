@@ -1,3 +1,4 @@
+/* Basic reset & theme */
 * { box-sizing: border-box; }
 :root {
   --bg: #0b0f14;
@@ -21,9 +22,7 @@ a:hover { text-decoration: underline; }
 .container { width: min(1100px, 92%); margin: 0 auto; }
 
 /* Skip link */
-.skip-link {
-  position: absolute; left: -9999px; top: auto; width:1px; height:1px; overflow:hidden;
-}
+.skip-link { position: absolute; left: -9999px; top: auto; width:1px; height:1px; overflow:hidden; }
 .skip-link:focus { position: static; width: auto; height: auto; padding: .5rem; background:#222; }
 
 /* Header */
@@ -69,48 +68,29 @@ a:hover { text-decoration: underline; }
 .tags span { font-size:.8rem; color: var(--muted); border:1px solid rgba(255,255,255,.08); padding:.2rem .5rem; border-radius:6px; }
 
 .people { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
-.person img { border-radius: 12px; }
 .person figcaption { text-align:center; margin-top:.4rem; }
 
-.checklist { padding-left: 1rem; }
-.checklist li { margin:.3rem 0; }
-
-/* FAQ */
-details { background: var(--card); padding: .8rem 1rem; border-radius: 10px; margin:.6rem 0; }
-details[open] { border: 1px solid rgba(255,255,255,.08); }
-
-/* Form */
-.form label { display:block; margin:.6rem 0 .25rem; }
-.form input { width:100%; padding:.7rem .8rem; background:#0e1722; border:1px solid rgba(255,255,255,.08); border-radius:10px; color:var(--fg); }
-.form button { margin-top: .8rem; }
-.small { font-size: .9rem; }
-.tiny { font-size: .85rem; }
-.muted { color: var(--muted); }
-
-/* Footer */
-.site-footer { border-top: 1px solid rgba(255,255,255,.06); }
-.footer-inner { display:flex; justify-content:space-between; padding: 1rem 0; }
-@media (max-width: 700px) { .footer-inner { flex-direction:column; gap:.4rem; } }
-
-/* --- Officers grid + uniform circular images --- */
+/* Officers grid + uniform image sizing */
 #officers .people {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.25rem;
   align-items: start;
 }
-
 #officers .person img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;   /* makes them circles */
+  width: 220px;          /* same width */
+  height: 220px;         /* same height */
+  object-fit: cover;     /* crop to fill */
+  border-radius: 12px;   /* set to 50% for circles */
   display: block;
   margin-inline: auto;
 }
 
-#officers .person figcaption {
-  text-align: center;
-  margin-top: 0.5rem;
-}
+/* FAQ */
+details { background: var(--card); padding: .8rem 1rem; border-radius: 10px; margin:.6rem 0; }
+details[open] { border: 1px solid rgba(255,255,255,.08); }
 
+/* Footer */
+.site-footer { border-top: 1px solid rgba(255,255,255,.06); }
+.footer-inner { display:flex; justify-content:space-between; padding: 1rem 0; }
+@media (max-width: 700px) { .footer-inner { flex-direction:column; gap:.4rem; } }
