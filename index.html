@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SFHS Machine Learning Club</title>
+  <meta name="description" content="SFHS Machine Learning Club — learn ML, build projects, compete, and have fun. Monthly meetings on Thursdays." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="SFHS Machine Learning Club home">
+        <span class="brand-mark">∑</span> SFHS ML Club
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#meetings">Meetings</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#officers">Officers</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="cta" href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>SFHS Machine Learning Club</h1>
+        <p class="subtitle">Learn ML fundamentals, ship projects, and compete—no experience required.</p>
+        <div class="hero-cta">
+          <a class="button primary" href="#join">Join the Club</a>
+          <a class="button ghost" href="#meetings">Next Meeting</a>
+        </div>
+        <ul class="hero-highlights" aria-label="Club highlights">
+          <li>🤖 Hands-on workshops</li>
+          <li>🧪 Real projects</li>
+          <li>🏆 Competitions & hackathons</li>
+        </ul>
+      </div>
+      <div class="gradient-bg" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>What we do</h2>
+          <p>
+            We explore core concepts like supervised learning, neural networks, and model evaluation—then apply them to
+            real problems like image classification, recommendation, and NLP. We also prep for ML competitions and
+            host talks from student researchers.
+          </p>
+          <ul class="checklist">
+            <li>Beginner-friendly workshops</li>
+            <li>Project teams with mentors</li>
+            <li>Competition practice & strategy</li>
+            <li>Resume-ready deliverables</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Meeting cadence</h3>
+          <p>
+            We meet <strong>monthly on Thursdays</strong> after school.
+            See dates below or join the email list for reminders.
+          </p>
+          <p class="muted small">Tip: Add meetings to your calendar from the Meetings section.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="meetings" class="section alt">
+      <div class="container">
+        <h2>Meetings</h2>
+        <p class="muted">First Thursday of each month by default. Upcoming six dates auto-generated below.</p>
+        <div id="meeting-list" class="cards" role="list" aria-live="polite"></div>
+        <details class="tiny">
+          <summary>Edit schedule rule</summary>
+          <p>Open <code>script.js</code> and change <code>MEETING_RULE</code> to pick
+            <em>first/second/third/fourth/last</em> Thursday.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Digit Classifier</h3>
+            <p>Build a handwritten digit recognizer (MNIST) and learn train/val splits, accuracy, and confusion matrices.</p>
+            <div class="tags"><span>Python</span><span>sklearn</span></div>
+          </article>
+          <article class="card">
+            <h3>Music Recommender</h3>
+            <p>Collaborative filtering + embeddings to suggest new songs based on listening history.</p>
+            <div class="tags"><span>Python</span><span>Recsys</span></div>
+          </article>
+          <article class="card">
+            <h3>Vision Mini-Hack</h3>
+            <p>Train a CNN to classify school spirit photos—best accuracy wins prizes.</p>
+            <div class="tags"><span>PyTorch</span><span>CNN</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="officers" class="section alt">
+      <div class="container">
+        <h2>Officers</h2>
+        <div class="people">
+          <figure class="person">
+            <img src="https://placehold.co/240x240" alt="President headshot placeholder" />
+            <figcaption><strong>President</strong><br><span class="muted">Name Here</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240" alt="Vice President headshot placeholder" />
+            <figcaption><strong>Vice President</strong><br><span class="muted">Name Here</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240" alt="Secretary headshot placeholder" />
+            <figcaption><strong>Secretary</strong><br><span class="muted">Name Here</span></figcaption>
+          </figure>
+          <figure class="person">
+            <img src="https://placehold.co/240x240" alt="Treasurer headshot placeholder" />
+            <figcaption><strong>Treasurer</strong><br><span class="muted">Name Here</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Do I need prior experience?</summary>
+          <p>Nope! We start from the basics and level up together.</p>
+        </details>
+        <details>
+          <summary>What should I bring?</summary>
+          <p>A laptop if you have one. We’ll share install guides and notebooks.</p>
+        </details>
+        <details>
+          <summary>Can underclassmen join?</summary>
+          <p>Absolutely. Everyone at SFHS is welcome.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Join the Club</h2>
+          <p>Get updates about meetings, workshops, and competitions. We’ll email 1–2 times per month.</p>
+          <form id="join-form" class="form" novalidate>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="grad">Graduation year</label>
+            <input id="grad" name="grad" type="number" min="2025" max="2035" inputmode="numeric" />
+
+            <button class="button primary" type="submit">Subscribe</button>
+            <p id="form-status" class="small muted" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <aside class="card">
+          <h3>Questions?</h3>
+          <p>Email <a href="mailto:sfhs-ml-club@example.com">sfhs-ml-club@example.com</a></p>
+          <p class="small muted">Or DM us on Instagram: <a href="#" aria-disabled="true">@sfhs_ml_club</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SFHS Machine Learning Club</p>
+      <p class="small muted">Built with ❤️ by the officers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
